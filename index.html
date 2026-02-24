@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Blurr - Luxury Silver & Diamond Jewelry. Exquisite handcrafted pieces for discerning collectors. IGI Certified Diamonds, 99.9% Pure Silver.">
+    <title>The Blurr - Luxury Silver & Diamond Jewelry | Exquisite Craftsmanship</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-slider">
+            <div class="announcement-slide active">
+                <i class="fas fa-shipping-fast"></i>
+                <span>Complimentary Shipping & Returns Worldwide</span>
+            </div>
+            <div class="announcement-slide">
+                <i class="fas fa-gem"></i>
+                <span>IGI Certified Diamonds - 99.9% Pure Silver Guarantee</span>
+            </div>
+            <div class="announcement-slide">
+                <i class="fas fa-shield-alt"></i>
+                <span>Lifetime Service & Jewelry Care</span>
+            </div>
+        </div>
+        <div class="announcement-controls">
+            <button class="announcement-prev" aria-label="Previous announcement"><i class="fas fa-chevron-left"></i></button>
+            <button class="announcement-next" aria-label="Next announcement"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <!-- Left Navigation -->
+            <nav class="header-left">
+                <ul class="main-nav">
+                    <li class="nav-item has-mega-menu">
+                        <a href="#collections" class="nav-link">Collections</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-container">
+                                <div class="mega-menu-column">
+                                    <h3>By Category</h3>
+                                    <ul class="mega-menu-list">
+                                        <li><a href="#necklaces">Necklaces</a></li>
+                                        <li><a href="#rings">Rings</a></li>
+                                        <li><a href="#earrings">Earrings</a></li>
+                                        <li><a href="#bracelets">Bracelets</a></li>
+                                        <li><a href="#bridal">Bridal Collection</a></li>
+                                        <li><a href="#gifts">Gift Sets</a></li>
+                                    </ul>
+                                    <a href="#all-collections" class="mega-menu-view-all">View All Collections →</a>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>By Occasion</h3>
+                                    <ul class="mega-menu-list">
+                                        <li><a href="#everyday">Everyday Elegance</a></li>
+                                        <li><a href="#evening">Evening Glamour</a></li>
+                                        <li><a href="#bridal-occasion">Bridal & Wedding</a></li>
+                                        <li><a href="#gifting">Luxury Gifting</a></li>
+                                        <li><a href="#anniversary">Anniversary</a></li>
+                                        <li><a href="#celebration">Special Celebrations</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>By Collection</h3>
+                                    <ul class="mega-menu-list">
+                                        <li><a href="#signature">Signature Collection</a></li>
+                                        <li><a href="#heritage">Heritage Series</a></li>
+                                        <li><a href="#contemporary">Contemporary Classics</a></li>
+                                        <li><a href="#limited">Limited Edition</a></li>
+                                        <li><a href="#new-arrivals">New Arrivals</a></li>
+                                        <li><a href="#bestsellers">Bestsellers</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-featured">
+                                    <div class="featured-collection-card">
+                                        <div class="featured-image">
+                                            <div class="placeholder-image">Featured Collection</div>
+                                        </div>
+                                        <h4>Lumière Collection</h4>
+                                        <p>Radiant designs capturing light and brilliance</p>
+                                        <a href="#lumiere" class="btn-secondary-small">Explore Collection</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Our Story</a></li>
+                    <li class="nav-item"><a href="#bespoke" class="nav-link">Bespoke</a></li>
+                    <li class="nav-item"><a href="#consultation" class="nav-link">Consultation</a></li>
+                </ul>
+            </nav>
+
+            <!-- Center Logo -->
+            <div class="header-logo">
+                <a href="#home" class="logo-link">
+                    <h1 class="logo-text">THE BLURR<span class="sparkle-icon">✦</span></h1>
+                </a>
+            </div>
+
+            <!-- Right Actions -->
+            <div class="header-right">
+                <div class="header-actions">
+                    <!-- Currency Selector -->
+                    <div class="currency-selector">
+                        <button class="currency-btn" id="currencyBtn">
+                            <span class="current-currency">USD</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="currency-dropdown" id="currencyDropdown">
+                            <button class="currency-option" data-currency="USD">USD ($)</button>
+                            <button class="currency-option" data-currency="EUR">EUR (€)</button>
+                            <button class="currency-option" data-currency="GBP">GBP (£)</button>
+                            <button class="currency-option" data-currency="INR">INR (₹)</button>
+                        </div>
+                    </div>
+
+                    <!-- Search -->
+                    <button class="header-icon-btn" id="searchBtn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                    <!-- Account -->
+                    <button class="header-icon-btn" id="accountBtn" aria-label="Account">
+                        <i class="fas fa-user"></i>
+                    </button>
+
+                    <!-- Wishlist -->
+                    <button class="header-icon-btn" id="wishlistBtn" aria-label="Wishlist">
+                        <i class="fas fa-heart"></i>
+                        <span class="icon-badge" id="wishlistCount">0</span>
+                    </button>
+
+                    <!-- Cart -->
+                    <button class="header-icon-btn" id="cartBtn" aria-label="Shopping Cart">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="icon-badge" id="cartCount">0</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <button class="search-close" id="searchClose" aria-label="Close search">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search for necklaces, rings, earrings..." autocomplete="off">
+                </div>
+                <div class="search-suggestions" id="searchSuggestions">
+                    <div class="search-popular">
+                        <h4>Popular Searches</h4>
+                        <ul class="popular-searches">
+                            <li><a href="#diamond-necklaces">Diamond Necklaces</a></li>
+                            <li><a href="#engagement-rings">Engagement Rings</a></li>
+                            <li><a href="#bridal-collection">Bridal Collection</a></li>
+                            <li><a href="#diamond-earrings">Diamond Earrings</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <h2>Menu</h2>
+            <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav-content">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item">
+                    <a href="#collections" class="mobile-nav-link">Collections</a>
+                    <button class="mobile-nav-expand" aria-label="Expand collections">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <ul class="mobile-submenu">
+                        <li><a href="#necklaces">Necklaces</a></li>
+                        <li><a href="#rings">Rings</a></li>
+                        <li><a href="#earrings">Earrings</a></li>
+                        <li><a href="#bracelets">Bracelets</a></li>
+                        <li><a href="#bridal">Bridal Collection</a></li>
+                        <li><a href="#gifts">Gift Sets</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-nav-item"><a href="#about" class="mobile-nav-link">Our Story</a></li>
+                <li class="mobile-nav-item"><a href="#bespoke" class="mobile-nav-link">Bespoke</a></li>
+                <li class="mobile-nav-item"><a href="#consultation" class="mobile-nav-link">Consultation</a></li>
+                <li class="mobile-nav-item"><a href="#account" class="mobile-nav-link">My Account</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="heroSection">
+        <div class="hero-carousel">
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+                <div class="hero-image">
+                    <div class="hero-placeholder">
+                        <div class="sparkle-overlay"></div>
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <h2 class="hero-subtitle">Exquisite Craftsmanship</h2>
+                    <h1 class="hero-title">Where Silver Meets<br>Diamond Brilliance</h1>
+                    <p class="hero-description">Discover our curated collection of handcrafted jewelry, where artistry and luxury converge</p>
+                    <div class="hero-cta">
+                        <a href="#collections" class="btn-primary">Explore Collections</a>
+                        <a href="#consultation" class="btn-secondary">Book Private Consultation</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <div class="hero-image">
+                    <div class="hero-placeholder hero-placeholder-2">
+                        <div class="sparkle-overlay"></div>
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <h2 class="hero-subtitle">New Arrivals</h2>
+                    <h1 class="hero-title">The Lumière<br>Collection</h1>
+                    <p class="hero-description">Capturing light and brilliance in every design</p>
+                    <div class="hero-cta">
+                        <a href="#new-arrivals" class="btn-primary">Discover Now</a>
+                        <a href="#collections" class="btn-secondary">View All Collections</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+                <div class="hero-image">
+                    <div class="hero-placeholder hero-placeholder-3">
+                        <div class="sparkle-overlay"></div>
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <h2 class="hero-subtitle">Bespoke Service</h2>
+                    <h1 class="hero-title">Create Your<br>Legacy Piece</h1>
+                    <p class="hero-description">Work with our master artisans to design your dream jewelry</p>
+                    <div class="hero-cta">
+                        <a href="#bespoke" class="btn-primary">Start Your Design</a>
+                        <a href="#consultation" class="btn-secondary">Schedule Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="hero-control hero-prev" id="heroPrev" aria-label="Previous slide">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="hero-control hero-next" id="heroNext" aria-label="Next slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <!-- Carousel Dots -->
+        <div class="hero-dots">
+            <button class="hero-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+            <button class="hero-dot" data-slide="1" aria-label="Go to slide 2"></button>
+            <button class="hero-dot" data-slide="2" aria-label="Go to slide 3"></button>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="featured-collections section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Signature Collections</h2>
+                <p class="section-subtitle">Curated for the discerning collector</p>
+            </div>
+            
+            <div class="collections-grid">
+                <div class="collection-card" data-collection="diamond-necklaces">
+                    <div class="collection-image">
+                        <div class="placeholder-collection">Diamond Necklaces</div>
+                        <div class="collection-overlay">
+                            <a href="#diamond-necklaces" class="btn-white">Shop Collection</a>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3 class="collection-name">Diamond Necklaces</h3>
+                        <p class="collection-description">Timeless elegance for every occasion</p>
+                        <span class="collection-count">24 Pieces</span>
+                    </div>
+                </div>
+
+                <div class="collection-card" data-collection="statement-rings">
+                    <div class="collection-image">
+                        <div class="placeholder-collection">Statement Rings</div>
+                        <div class="collection-overlay">
+                            <a href="#statement-rings" class="btn-white">Shop Collection</a>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3 class="collection-name">Statement Rings</h3>
+                        <p class="collection-description">Bold designs that captivate</p>
+                        <span class="collection-count">32 Pieces</span>
+                    </div>
+                </div>
+
+                <div class="collection-card" data-collection="bridal-elegance">
+                    <div class="collection-image">
+                        <div class="placeholder-collection">Bridal Elegance</div>
+                        <div class="collection-overlay">
+                            <a href="#bridal-elegance" class="btn-white">Shop Collection</a>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3 class="collection-name">Bridal Elegance</h3>
+                        <p class="collection-description">Your perfect wedding ensemble</p>
+                        <span class="collection-count">18 Pieces</span>
+                    </div>
+                </div>
+
+                <div class="collection-card" data-collection="timeless-classics">
+                    <div class="collection-image">
+                        <div class="placeholder-collection">Timeless Classics</div>
+                        <div class="collection-overlay">
+                            <a href="#timeless-classics" class="btn-white">Shop Collection</a>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3 class="collection-name">Timeless Classics</h3>
+                        <p class="collection-description">Enduring beauty, eternal grace</p>
+                        <span class="collection-count">28 Pieces</span>
+                    </div>
+                </div>
+
+                <div class="collection-card" data-collection="new-arrivals">
+                    <div class="collection-image">
+                        <div class="placeholder-collection">New Arrivals</div>
+                        <div class="collection-overlay">
+                            <a href="#new-arrivals" class="btn-white">Shop Collection</a>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3 class="collection-name">New Arrivals</h3>
+                        <p class="collection-description">Latest designs, just for you</p>
+                        <span class="collection-count">15 Pieces</span>
+                    </div>
+                </div>
+
+                <div class="collection-card" data-collection="luxury-gifts">
+                    <div class="collection-image">
+                        <div class="placeholder-collection">Luxury Gifts</div>
+                        <div class="collection-overlay">
+                            <a href="#luxury-gifts" class="btn-white">Shop Collection</a>
+                        </div>
+                    </div>
+                    <div class="collection-info">
+                        <h3 class="collection-name">Luxury Gift Sets</h3>
+                        <p class="collection-description">Exquisitely packaged treasures</p>
+                        <span class="collection-count">12 Sets</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="product-showcase section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bestsellers</h2>
+                <p class="section-subtitle">Our most coveted pieces</p>
+            </div>
+
+            <!-- Filter & Sort Bar -->
+            <div class="filter-sort-bar">
+                <div class="filter-actions">
+                    <button class="filter-btn" id="filterBtn">
+                        <i class="fas fa-sliders-h"></i>
+                        <span>Filter</span>
+                    </button>
+                    <div class="active-filters" id="activeFilters">
+                        <!-- Active filters will be inserted here -->
+                    </div>
+                </div>
+                <div class="sort-dropdown">
+                    <select id="sortSelect" class="sort-select">
+                        <option value="featured">Sort by: Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest Arrivals</option>
+                        <option value="bestselling">Bestselling</option>
+                        <option value="rating">Highest Rated</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+
+            <!-- Load More -->
+            <div class="load-more-container">
+                <button class="btn-secondary" id="loadMoreBtn">View All Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose-section section-padding-dark">
+        <div class="container">
+            <div class="section-header section-header-light">
+                <h2 class="section-title">The Blurr Promise</h2>
+                <p class="section-subtitle">Uncompromising quality and service</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="feature-title">IGI Certified Diamonds</h3>
+                    <p class="feature-description">Every diamond is certified by the International Gemological Institute, ensuring authenticity and quality.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-check"></i>
+                    </div>
+                    <h3 class="feature-title">99.9% Pure Silver</h3>
+                    <p class="feature-description">Hallmarked sterling silver with lifetime purity guarantee. Each piece stamped and certified.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="feature-title">Artisan Craftsmanship</h3>
+                    <p class="feature-description">Handcrafted by master jewelers with over 30 years of experience in luxury jewelry creation.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3 class="feature-title">Lifetime Service</h3>
+                    <p class="feature-description">Complimentary cleaning, maintenance, and repairs for the lifetime of your jewelry.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 class="feature-title">Bespoke Design</h3>
+                    <p class="feature-description">Create your unique piece with our in-house designers. From concept to creation.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3 class="feature-title">Worldwide Delivery</h3>
+                    <p class="feature-description">Complimentary insured shipping and hassle-free returns within 30 days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Signals Section -->
+    <section class="trust-section section-padding">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-column">
+                    <h3 class="trust-heading">Certifications</h3>
+                    <div class="certification-badges">
+                        <div class="cert-badge">IGI</div>
+                        <div class="cert-badge">Hallmark</div>
+                        <div class="cert-badge">BIS</div>
+                    </div>
+                </div>
+
+                <div class="trust-column">
+                    <h3 class="trust-heading">As Featured In</h3>
+                    <div class="press-mentions">
+                        <span class="press-logo">VOGUE</span>
+                        <span class="press-logo">ELLE</span>
+                        <span class="press-logo">HARPER'S BAZAAR</span>
+                    </div>
+                </div>
+
+                <div class="trust-column">
+                    <h3 class="trust-heading">Awards</h3>
+                    <div class="award-list">
+                        <p>🏆 Best Luxury Jewelry 2025</p>
+                        <p>⭐ Excellence in Design</p>
+                    </div>
+                </div>
+
+                <div class="trust-column">
+                    <h3 class="trust-heading">Our Clients</h3>
+                    <div class="stats-list">
+                        <p><strong>5,000+</strong> Happy Clients</p>
+                        <p><strong>500+</strong> Exclusive Designs</p>
+                        <p><strong>4.9/5</strong> Average Rating</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="security-badges">
+                <div class="security-badge">
+                    <i class="fas fa-lock"></i>
+                    <span>Secure Payment</span>
+                </div>
+                <div class="security-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>SSL Encrypted</span>
+                </div>
+                <div class="security-badge">
+                    <i class="fas fa-undo"></i>
+                    <span>Easy Returns</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story Section -->
+    <section class="brand-story-section section-padding">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-image">
+                    <div class="placeholder-story">Artisan Craftsmanship</div>
+                </div>
+                <div class="story-text">
+                    <h2 class="story-title">Heritage of Excellence</h2>
+                    <div class="story-body">
+                        <p>Founded with a vision to redefine luxury jewelry, The Blurr represents the perfect synthesis of timeless elegance and contemporary design. Our journey began with a simple belief: that exceptional jewelry should be both an investment and an heirloom.</p>
+                        
+                        <p>Each piece in our collection is meticulously handcrafted by master artisans who have dedicated their lives to perfecting the art of jewelry making. We source only the finest diamonds and use 99.9% pure silver, ensuring that every creation meets the exacting standards expected by our discerning clientele.</p>
+                        
+                        <p>At The Blurr, we understand that jewelry is more than adornment—it's a statement of personal style, a marker of life's precious moments, and a legacy to be treasured for generations.</p>
+
+                        <div class="story-milestones">
+                            <div class="milestone">
+                                <span class="milestone-number">2015</span>
+                                <span class="milestone-text">Founded</span>
+                            </div>
+                            <div class="milestone">
+                                <span class="milestone-number">500+</span>
+                                <span class="milestone-text">Unique Designs</span>
+                            </div>
+                            <div class="milestone">
+                                <span class="milestone-number">5000+</span>
+                                <span class="milestone-text">Happy Clients</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#about" class="btn-primary">Discover Our Story</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section section-padding-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Exclusive Services</h2>
+                <p class="section-subtitle">Tailored experiences for our valued clients</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="service-title">Virtual Try-On</h3>
+                    <p class="service-description">Experience our jewelry from the comfort of your home with our advanced AR technology.</p>
+                    <a href="#virtual-tryon" class="service-link">Try Now →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="service-title">Private Consultation</h3>
+                    <p class="service-description">Schedule a one-on-one appointment with our jewelry experts at your convenience.</p>
+                    <a href="#consultation" class="service-link">Book Appointment →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3 class="service-title">Bespoke Design</h3>
+                    <p class="service-description">Collaborate with our designers to create a one-of-a-kind piece that tells your story.</p>
+                    <a href="#bespoke" class="service-link">Start Designing →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="service-title">Care & Repair</h3>
+                    <p class="service-description">Lifetime complimentary cleaning, maintenance, and repair services for all pieces.</p>
+                    <a href="#care" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="service-title">Luxury Gifting</h3>
+                    <p class="service-description">Exquisite gift packaging and personalized messages for your special occasions.</p>
+                    <a href="#gifting" class="service-link">Explore Options →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="service-title">Showroom Visits</h3>
+                    <p class="service-description">Visit our exclusive showrooms for an immersive luxury shopping experience.</p>
+                    <a href="#stores" class="service-link">Find Store →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Testimonials</h2>
+                <p class="section-subtitle">What our distinguished clients say</p>
+            </div>
+
+            <div class="testimonials-carousel">
+                <button class="testimonial-control testimonial-prev" aria-label="Previous testimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="testimonials-wrapper">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"The craftsmanship is absolutely exquisite. I purchased a diamond necklace for my anniversary, and it exceeded all expectations. The personal attention from their team made the experience truly memorable."</p>
+                        <div class="testimonial-author">
+                            <h4 class="author-name">Priya Malhotra</h4>
+                            <p class="author-location">Mumbai, India</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Working with The Blurr on a bespoke engagement ring was an absolute pleasure. Their designers brought my vision to life with impeccable attention to detail. My fiancée was speechless."</p>
+                        <div class="testimonial-author">
+                            <h4 class="author-name">Rajesh Khanna</h4>
+                            <p class="author-location">Dubai, UAE</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"I've been collecting fine jewelry for years, and The Blurr stands out for their exceptional quality and service. Each piece is a work of art. The lifetime service guarantee gives me complete peace of mind."</p>
+                        <div class="testimonial-author">
+                            <h4 class="author-name">Ananya Reddy</h4>
+                            <p class="author-location">London, UK</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="testimonial-control testimonial-next" aria-label="Next testimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram-section section-padding-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Follow Our Journey</h2>
+                <p class="section-subtitle">@theblurr</p>
+            </div>
+
+            <div class="instagram-grid">
+                <div class="instagram-item">
+                    <div class="instagram-placeholder">Instagram Post 1</div>
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <div class="instagram-placeholder">Instagram Post 2</div>
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <div class="instagram-placeholder">Instagram Post 3</div>
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <div class="instagram-placeholder">Instagram Post 4</div>
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <div class="instagram-placeholder">Instagram Post 5</div>
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <div class="instagram-placeholder">Instagram Post 6</div>
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instagram-cta">
+                <a href="https://instagram.com/theblurr" class="btn-primary" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    Follow Us on Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section section-padding">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">Join Our Inner Circle</h2>
+                    <p class="newsletter-description">Be the first to discover new collections, exclusive offers, and jewelry care tips. Receive 10% off your first purchase.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="newsletter-input-wrapper">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                        <button type="submit" class="newsletter-submit">Subscribe</button>
+                    </div>
+                    <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Column 1: About -->
+                    <div class="footer-column">
+                        <h3 class="footer-heading">THE BLURR<span class="sparkle-icon">✦</span></h3>
+                        <p class="footer-about">Where silver meets diamond brilliance. Exquisite handcrafted jewelry for the discerning collector.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Shop -->
+                    <div class="footer-column">
+                        <h4 class="footer-title">Shop</h4>
+                        <ul class="footer-links">
+                            <li><a href="#all-collections">All Collections</a></li>
+                            <li><a href="#new-arrivals">New Arrivals</a></li>
+                            <li><a href="#bestsellers">Bestsellers</a></li>
+                            <li><a href="#limited-edition">Limited Edition</a></li>
+                            <li><a href="#bespoke">Bespoke Design</a></li>
+                            <li><a href="#gift-sets">Gift Sets</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Customer Care -->
+                    <div class="footer-column">
+                        <h4 class="footer-title">Customer Care</h4>
+                        <ul class="footer-links">
+                            <li><a href="#shipping"><strong>Shipping Information</strong></a></li>
+                            <li><a href="#returns"><strong>Returns & Exchanges</strong></a></li>
+                            <li><a href="#jewelry-care">Jewelry Care Guide</a></li>
+                            <li><a href="#size-guide">Size Guide</a></li>
+                            <li><a href="#faqs">FAQs</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#warranty">Warranty Information</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Company -->
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <ul class="footer-links">
+                            <li><a href="#about">Our Story</a></li>
+                            <li><a href="#certifications">Certifications</a></li>
+                            <li><a href="#press">Press & Media</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                            <li><a href="#stores">Store Locator</a></li>
+                            <li><a href="#sustainability">Sustainability</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#terms">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">&copy; 2026 The Blurr. All rights reserved.</p>
+                    <div class="footer-payment">
+                        <span class="payment-label">We Accept:</span>
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content quick-view-modal">
+            <button class="modal-close" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="quick-view-grid">
+                <div class="quick-view-images">
+                    <div class="quick-view-main-image">
+                        <img src="" alt="" id="quickViewMainImage">
+                        <button class="image-zoom-btn" aria-label="Zoom image">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                    <div class="quick-view-thumbnails" id="quickViewThumbnails">
+                        <!-- Thumbnails will be inserted here -->
+                    </div>
+                </div>
+                <div class="quick-view-details">
+                    <div class="product-badges" id="quickViewBadges"></div>
+                    <h2 class="product-name" id="quickViewName"></h2>
+                    <div class="product-rating" id="quickViewRating"></div>
+                    <div class="product-price" id="quickViewPrice"></div>
+                    <p class="product-description" id="quickViewDescription"></p>
+                    
+                    <div class="product-options">
+                        <div class="option-group" id="quickViewOptions">
+                            <!-- Options will be inserted here -->
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-primary btn-add-cart" id="quickViewAddCart">
+                            <i class="fas fa-shopping-bag"></i>
+                            Add to Cart
+                        </button>
+                        <button class="btn-wishlist-large" id="quickViewWishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <a href="#" class="view-full-details" id="quickViewFullDetails">View Full Details →</a>
+
+                    <div class="product-meta">
+                        <p><strong>SKU:</strong> <span id="quickViewSKU"></span></p>
+                        <p><strong>Category:</strong> <span id="quickViewCategory"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter Modal (Mobile) -->
+    <div class="modal" id="filterModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content filter-modal">
+            <div class="filter-header">
+                <h3>Filter Products</h3>
+                <button class="modal-close" aria-label="Close filters">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="filter-body" id="filterBody">
+                <!-- Filters will be inserted here -->
+            </div>
+            <div class="filter-footer">
+                <button class="btn-secondary" id="clearFilters">Clear All</button>
+                <button class="btn-primary" id="applyFilters">Apply Filters</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart (<span id="cartItemCount">0</span>)</h3>
+            <button class="cart-close" id="cartClose" aria-label="Close cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-body" id="cartBody">
+            <div class="cart-empty" id="cartEmpty">
+                <i class="fas fa-shopping-bag"></i>
+                <p>Your cart is empty</p>
+                <a href="#collections" class="btn-primary">Start Shopping</a>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be inserted here -->
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-subtotal">
+                <span>Subtotal:</span>
+                <span id="cartSubtotal">₹0</span>
+            </div>
+            <p class="cart-note">Shipping and taxes calculated at checkout</p>
+            <button class="btn-primary btn-checkout" id="checkoutBtn">Proceed to Checkout</button>
+            <button class="btn-secondary" id="continueShoppingBtn">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- Wishlist Sidebar -->
+    <div class="wishlist-sidebar" id="wishlistSidebar">
+        <div class="wishlist-header">
+            <h3>My Wishlist (<span id="wishlistItemCount">0</span>)</h3>
+            <button class="wishlist-close" id="wishlistClose" aria-label="Close wishlist">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="wishlist-body" id="wishlistBody">
+            <div class="wishlist-empty" id="wishlistEmpty">
+                <i class="fas fa-heart"></i>
+                <p>Your wishlist is empty</p>
+                <a href="#collections" class="btn-primary">Discover Collections</a>
+            </div>
+            <div class="wishlist-items" id="wishlistItems">
+                <!-- Wishlist items will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Live Chat Indicator -->
+    <button class="live-chat-btn" id="liveChatBtn" aria-label="Live chat">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="notification-toast" id="notificationToast">
+        <i class="fas fa-check-circle"></i>
+        <span id="notificationMessage"></span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,811 @@
+/* =================================================================
+   THE BLURR - ANIMATIONS & SPARKLE EFFECTS
+   Luxury Micro-Interactions and Visual Enhancements
+   ================================================================= */
+
+/* =================================================================
+   SPARKLE ANIMATIONS
+   ================================================================= */
+
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.2) rotate(180deg);
+    }
+}
+
+@keyframes sparkleOrbit {
+    0% {
+        transform: rotate(0deg) translateX(50px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(50px) rotate(-360deg);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(201, 169, 97, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(201, 169, 97, 0.6);
+    }
+}
+
+/* =================================================================
+   SPARKLE ICON ANIMATION
+   ================================================================= */
+
+.sparkle-icon {
+    display: inline-block;
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+/* Logo Sparkle Effect */
+.logo-text .sparkle-icon {
+    position: relative;
+    animation: sparkle 3s ease-in-out infinite;
+}
+
+/* Hero Sparkle Overlay Animation */
+.sparkle-overlay {
+    animation: pulse 3s ease-in-out infinite;
+}
+
+.sparkle-overlay::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 4px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: sparkleOrbit 8s linear infinite;
+}
+
+.sparkle-overlay::after {
+    content: '';
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    width: 3px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    animation: sparkleOrbit 10s linear infinite reverse;
+}
+
+/* =================================================================
+   SHIMMER EFFECT (For product cards and images)
+   ================================================================= */
+
+.shimmer-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.shimmer-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 100%
+    );
+    animation: shimmer 3s infinite;
+}
+
+/* Apply shimmer to product images on hover */
+.product-card:hover .product-image-wrapper {
+    position: relative;
+}
+
+.product-card:hover .product-image-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.4) 50%,
+        transparent 100%
+    );
+    animation: shimmer 1.5s ease-in-out;
+}
+
+/* =================================================================
+   SCROLL ANIMATIONS (Intersection Observer Classes)
+   ================================================================= */
+
+.animate-on-scroll {
+    opacity: 0;
+}
+
+.animate-on-scroll.animated {
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+}
+
+.fade-in-up {
+    animation-name: fadeInUp;
+}
+
+.fade-in-left {
+    animation-name: fadeInLeft;
+}
+
+.fade-in-right {
+    animation-name: fadeInRight;
+}
+
+.scale-in {
+    animation-name: scaleIn;
+}
+
+/* Staggered animations for grid items */
+.animate-on-scroll:nth-child(1).animated {
+    animation-delay: 0.1s;
+}
+
+.animate-on-scroll:nth-child(2).animated {
+    animation-delay: 0.2s;
+}
+
+.animate-on-scroll:nth-child(3).animated {
+    animation-delay: 0.3s;
+}
+
+.animate-on-scroll:nth-child(4).animated {
+    animation-delay: 0.4s;
+}
+
+.animate-on-scroll:nth-child(5).animated {
+    animation-delay: 0.5s;
+}
+
+.animate-on-scroll:nth-child(6).animated {
+    animation-delay: 0.6s;
+}
+
+/* =================================================================
+   BUTTON HOVER EFFECTS
+   ================================================================= */
+
+.btn-primary,
+.btn-secondary,
+.btn-white {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-primary::before,
+.btn-secondary::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+    z-index: -1;
+}
+
+.btn-primary:hover::before,
+.btn-secondary:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Button Ripple Effect on Click */
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.btn-primary:active::after,
+.btn-secondary:active::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+    animation: ripple 0.6s ease-out;
+}
+
+/* =================================================================
+   CARD HOVER EFFECTS
+   ================================================================= */
+
+.collection-card,
+.service-card,
+.feature-card,
+.testimonial-card {
+    transition: all 0.3s ease;
+}
+
+.collection-card:hover,
+.service-card:hover,
+.feature-card:hover,
+.testimonial-card:hover {
+    animation: glow 2s ease-in-out;
+}
+
+/* Product Card Hover Lift */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* =================================================================
+   ICON ANIMATIONS
+   ================================================================= */
+
+.header-icon-btn i {
+    transition: transform 0.3s ease;
+}
+
+.header-icon-btn:hover i {
+    animation: bounce 0.6s ease;
+}
+
+/* Wishlist Heart Animation */
+.product-action-btn.active i,
+.btn-wishlist-large.active i {
+    animation: pulse 0.5s ease;
+    color: #DC3545;
+}
+
+/* Cart Badge Animation */
+.icon-badge {
+    transition: transform 0.3s ease;
+}
+
+.header-icon-btn:hover .icon-badge {
+    animation: pulse 0.5s ease;
+}
+
+/* =================================================================
+   LOADING ANIMATIONS
+   ================================================================= */
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: var(--color-accent);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Button Loading State */
+.btn-loading {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+}
+
+.btn-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-left-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+/* =================================================================
+   MODAL ENTRANCE ANIMATIONS
+   ================================================================= */
+
+.modal.active .modal-content {
+    animation: scaleIn 0.3s ease-out;
+}
+
+.search-overlay.active .search-container {
+    animation: fadeInDown 0.4s ease-out;
+}
+
+/* Sidebar Slide In */
+.cart-sidebar.active,
+.wishlist-sidebar.active,
+.mobile-nav.active {
+    animation: slideInRight 0.3s ease-out;
+}
+
+/* =================================================================
+   NOTIFICATION ANIMATIONS
+   ================================================================= */
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.notification-toast.show {
+    animation: slideUpFade 0.3s ease-out;
+}
+
+/* =================================================================
+   NAV LINK UNDERLINE ANIMATION
+   ================================================================= */
+
+.nav-link::after,
+.mega-menu-list a::after,
+.footer-links a::after {
+    transition: width 0.3s ease;
+}
+
+/* =================================================================
+   IMAGE ZOOM ANIMATION
+   ================================================================= */
+
+@keyframes imageZoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.collection-card:hover .placeholder-collection,
+.instagram-item:hover .instagram-placeholder {
+    animation: imageZoom 5s ease-out forwards;
+}
+
+/* =================================================================
+   ANNOUNCEMENT BAR SLIDE
+   ================================================================= */
+
+@keyframes announceSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.announcement-slide.active {
+    animation: announceSlideIn 0.5s ease-out;
+}
+
+/* =================================================================
+   HERO CAROUSEL FADE
+   ================================================================= */
+
+.hero-slide.active {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* =================================================================
+   CURRENCY DROPDOWN ANIMATION
+   ================================================================= */
+
+.currency-dropdown.active {
+    animation: slideInDown 0.2s ease-out;
+}
+
+/* =================================================================
+   FILTER TAG ENTRANCE
+   ================================================================= */
+
+@keyframes tagSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.filter-tag {
+    animation: tagSlideIn 0.3s ease-out;
+}
+
+/* =================================================================
+   MEGA MENU ENTRANCE
+   ================================================================= */
+
+.has-mega-menu:hover .mega-menu {
+    animation: fadeInUp 0.3s ease-out;
+}
+
+/* =================================================================
+   SCROLL PROGRESS INDICATOR (Optional Enhancement)
+   ================================================================= */
+
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-accent), var(--color-accent-hover));
+    z-index: calc(var(--z-header) + 1);
+    transition: width 0.1s ease;
+}
+
+/* =================================================================
+   HOVER GLOW EFFECTS
+   ================================================================= */
+
+.btn-primary:hover,
+.btn-add-cart:hover,
+.newsletter-submit:hover {
+    animation: glow 1.5s ease-in-out infinite;
+}
+
+/* =================================================================
+   QUANTITY BUTTON ANIMATIONS
+   ================================================================= */
+
+.quantity-btn:active {
+    transform: scale(0.95);
+}
+
+/* =================================================================
+   MOBILE MENU TOGGLE ANIMATION
+   ================================================================= */
+
+.mobile-menu-toggle span {
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+    animation: slideInDown 0.3s ease;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    animation: slideInDown 0.3s ease;
+}
+
+/* =================================================================
+   PRODUCT QUICK VIEW ANIMATION
+   ================================================================= */
+
+.quick-view-btn {
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* =================================================================
+   THUMBNAIL SELECTION ANIMATION
+   ================================================================= */
+
+.thumbnail-btn {
+    transition: all 0.2s ease;
+}
+
+.thumbnail-btn.active {
+    animation: scaleIn 0.3s ease-out;
+}
+
+/* =================================================================
+   PRICE CHANGE ANIMATION
+   ================================================================= */
+
+@keyframes priceHighlight {
+    0%, 100% {
+        color: inherit;
+    }
+    50% {
+        color: var(--color-accent);
+        transform: scale(1.05);
+    }
+}
+
+.product-price.updating {
+    animation: priceHighlight 0.5s ease;
+}
+
+/* =================================================================
+   SECTION ENTRANCE STAGGER
+   ================================================================= */
+
+.section-padding,
+.section-padding-light,
+.section-padding-dark {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.section-padding:nth-of-type(1) {
+    animation-delay: 0.1s;
+}
+
+.section-padding:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+
+.section-padding:nth-of-type(3) {
+    animation-delay: 0.3s;
+}
+
+/* =================================================================
+   CUSTOM CURSOR EFFECT (Premium Touch)
+   ================================================================= */
+
+@media (hover: hover) {
+    .collection-card,
+    .product-card,
+    .btn-primary,
+    .btn-secondary {
+        cursor: pointer;
+        position: relative;
+    }
+}
+
+/* =================================================================
+   SOCIAL ICON ROTATION
+   ================================================================= */
+
+.social-link:hover {
+    animation: rotate 0.6s ease;
+}
+
+/* =================================================================
+   BADGE ENTRANCE
+   ================================================================= */
+
+.product-badge {
+    animation: slideInRight 0.3s ease-out;
+}
+
+.badge-new {
+    animation-delay: 0.1s;
+}
+
+.badge-bestseller {
+    animation-delay: 0.2s;
+}
+
+.badge-limited {
+    animation-delay: 0.3s;
+}
+
+/* =================================================================
+   RATING STARS ANIMATION
+   ================================================================= */
+
+.product-rating i {
+    display: inline-block;
+    animation: scaleIn 0.3s ease-out;
+}
+
+.product-rating i:nth-child(1) { animation-delay: 0.05s; }
+.product-rating i:nth-child(2) { animation-delay: 0.1s; }
+.product-rating i:nth-child(3) { animation-delay: 0.15s; }
+.product-rating i:nth-child(4) { animation-delay: 0.2s; }
+.product-rating i:nth-child(5) { animation-delay: 0.25s; }
+
+/* =================================================================
+   FORM INPUT FOCUS ANIMATION
+   ================================================================= */
+
+.search-input:focus,
+.newsletter-input:focus {
+    animation: glow 2s ease-in-out infinite;
+}
+
+/* =================================================================
+   CART ITEM ENTRANCE
+   ================================================================= */
+
+.cart-item,
+.wishlist-item {
+    animation: slideInRight 0.3s ease-out;
+}
+
+/* =================================================================
+   LIVE CHAT PULSE
+   ================================================================= */
+
+.live-chat-btn {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.live-chat-btn::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 12px;
+    height: 12px;
+    background-color: #28A745;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* =================================================================
+   BACK TO TOP BUTTON ANIMATION
+   ================================================================= */
+
+.back-to-top.visible {
+    animation: fadeInUp 0.3s ease-out;
+}
+
+.back-to-top:hover {
+    animation: bounce 0.6s ease;
+}
+
+/* =================================================================
+   PRELOAD ANIMATION PREVENTION
+   ================================================================= */
+
+.preload * {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+}
+
+/* =================================================================
+   PERFORMANCE OPTIMIZATION
+   ================================================================= */
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .sparkle-icon,
+    .sparkle-overlay,
+    .shimmer-effect::after,
+    .live-chat-btn {
+        animation: none !important;
+    }
+}
